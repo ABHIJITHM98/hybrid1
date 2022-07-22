@@ -1,0 +1,76 @@
+<html>
+
+	<head>
+	<br><br><br><br><br>
+	
+		<h1 style="text-align:center";>Registration Form</h1>
+		
+				<style>
+				
+					body{
+					width:600px;
+					margin:auto;
+					}
+
+				</style>
+				
+		<script>
+				
+			function register()
+			
+				{
+
+					var a=document.getElementById("fname");
+					var b=document.getElementById("lname");
+					var c=document.getElementById("mno");
+					var d=document.getElementById("email");
+
+					if (! isNaN(c.value)&&a.value.length !=0 &&b.value.length !=0&&c.value.length ===10&&d.value.length !=0)
+					{
+					
+						alert("Registered Sucessfully");
+						
+					}
+						
+
+				}
+
+		</script>
+		
+
+	</head>
+
+
+	<body>
+	
+
+	
+	<form>
+
+		<div style="background-color:skyblue;padding:10px"; >
+		
+		<div style="text-align:center";>
+		
+		First Name:<input type="text" id="fname" required  ><br><br>
+		
+		Last Name:<input type="text" name="" id="lname" required><br><br>
+		
+		Mobile Number:<input type="text" name="" id="mno" required pattern="\d{10}"><br><br>
+		
+		Email:<input type="text" name="" id="email" required><br><br>
+		
+		<input type="Submit" value="Register" onclick=register()>
+
+
+		</div>
+		
+		</div>
+		
+	</form>
+	
+	</body>
+
+
+</html>
+
+
